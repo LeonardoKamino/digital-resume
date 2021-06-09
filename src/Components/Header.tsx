@@ -1,4 +1,5 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
 import "../Style/Header.scss";
 import BackgroundVideo from "../Media/Background.mp4";
 
@@ -10,7 +11,9 @@ const Header: React.FunctionComponent = () => {
 			</video>
 			<header className="viewport-header d-flex justify-content-center  align-items-center">
 				<div className="title">
-					<h1 className="greeting"> Hi! I am Leo Kamino,</h1>
+					<Fade left cascade>
+						<h1 className="greeting"> Hey, I'm Leo ;)</h1>
+					</Fade>
 					<h2 className="description">
 						A 2nd year Computer Engineering student @ UBC, Vancouver. <br />
 						Passionate about programming and technology.
