@@ -1,0 +1,40 @@
+@import "FluidType";
+
+.header {
+	.background-video {
+		object-fit: cover;
+		width: 100vw;
+		height: 100vh;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.viewport-header {
+		position: relative;
+		height: 100vh;
+		z-index: 2;
+		padding: 20px;
+		.title {
+			color: #e1f2f7;
+			.greeting {
+				@include fluid-type(font-size, 900px, 1200px, 3em, 5em);
+				margin-bottom: 40px;
+			}
+			.description {
+				@include fluid-type(font-size, 900px, 1200px, 1.5em, 1.7em);
+			}
+		}
+	}
+}
+
+.header::after {
+	content: "";
+	position: absolute;
+	min-width: 100vw;
+	min-height: 100vh;
+	background-color: rgba(10, 10, 10, 0.5);
+	z-index: 1;
+	left: 0;
+	top: 0;
+}

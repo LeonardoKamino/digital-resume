@@ -1,0 +1,48 @@
+.toolbar {
+	background: linear-gradient(45deg, #022145 10%, #023059 50%);
+	color: #e1f2f7;
+	font-size: 1.2em;
+
+	.desktop-list {
+		flex-grow: 1;
+
+		ul {
+			float: right;
+			padding: 0px;
+			margin: 0px;
+			height: 100%;
+			list-style: none;
+
+			li {
+				display: inline;
+				a {
+					padding: 2px 10px;
+					display: inline-block;
+					color: #e1f2f7;
+					text-decoration: none;
+				}
+				a:hover {
+					color: #cacbd9ff;
+				}
+			}
+		}
+	}
+}
+
+.drawer {
+	background-color: #022145;
+	height: 100%;
+	padding: 40px 40px;
+	ul {
+		list-style: none;
+		padding: 0;
+		li {
+			padding: 20px 0;
+			font-size: 1.5em;
+			a {
+				text-decoration: none;
+				color: #e1f2f7bb;
+			}
+		}
+	}
+}
