@@ -17,7 +17,7 @@ interface Props {
 const headersData = [
 	{
 		label: "About Me",
-		href: "#aboutme",
+		href: "#about-me",
 	},
 	{
 		label: "Projects",
@@ -67,7 +67,7 @@ export default function NavigationBar(props: Props) {
 
 	function displayDesktop() {
 		return (
-			<Toolbar className="toolbar" variant="dense">
+			<Toolbar className="toolbar">
 				<div className="desktop-list">
 					<ul>{getNavBarChoices()}</ul>
 				</div>

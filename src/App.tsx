@@ -1,5 +1,10 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Pages/Home";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faClock } from "@fortawesome/free-solid-svg-icons";
+
+library.add(faClock);
+
 function App() {
 	return (
 		<div className="App" style={{ fontFamily: "Roboto" }}>

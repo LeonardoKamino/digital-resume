@@ -1,5 +1,5 @@
 .toolbar {
-	background: linear-gradient(45deg, #022145 10%, #023059 50%);
+	background: linear-gradient(45deg, #01152e 10%, #023059 50%);
 	color: #e1f2f7;
 	font-size: 1.2em;
 
@@ -23,6 +23,7 @@
 				}
 				a:hover {
 					color: #cacbd9ff;
+					transform: translateY(-3px);
 				}
 			}
 		}
