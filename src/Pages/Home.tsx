@@ -3,6 +3,7 @@ import "./Home.scss";
 import Header from "../Components/Header";
 import NavigationBar from "../Components/NavigationBar";
 import AboutMe from "../Components/AboutMe";
+import Projects from "../Components/Projects";
 
 const Home: React.FunctionComponent = () => {
 	return (
@@ -10,6 +11,8 @@ const Home: React.FunctionComponent = () => {
 			<NavigationBar />
 			<Header />
 			<AboutMe />
+			<div className="transition"></div>
+			<Projects />
 		</div>
 	);
 };
