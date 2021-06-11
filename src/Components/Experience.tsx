@@ -12,7 +12,7 @@ const Experience: React.FunctionComponent = () => {
 				<h1 className="title">Experience</h1>
 			</Fade>
 			<section className="timeline-area">
-				{ExperienceList.map((experience) => (
+				{ExperienceList.map((experience, index) => (
 					<ExperienceCard
 						company={experience.company}
 						role={experience.role}
@@ -20,6 +20,7 @@ const Experience: React.FunctionComponent = () => {
 						description={experience.description}
 						skills={experience.skills}
 						logo={experience.logo}
+						key={index}
 					/>
 				))}
 			</section>

@@ -13,6 +13,7 @@ const Home: React.FunctionComponent = () => {
 			<AboutMe />
 			<div className="transition"></div>
 			<Projects />
+			<div className="transition rotate-180"></div>
 		</div>
 	);
 };

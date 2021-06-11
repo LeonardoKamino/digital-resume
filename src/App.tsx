@@ -1,9 +1,23 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Pages/Home";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faClock } from "@fortawesome/free-solid-svg-icons";
+import {
+	faClock,
+	faExpandAlt,
+	faTimes,
+	faMinus,
+	faExternalLinkAlt,
+} from "@fortawesome/free-solid-svg-icons";
 
-library.add(faClock);
+library.add(
+	faClock,
+	faExpandAlt,
+	faTimes,
+	faMinus,
+	faGithub,
+	faExternalLinkAlt
+);
 
 function App() {
 	return (
