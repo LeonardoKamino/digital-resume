@@ -7,7 +7,7 @@ import "../Style/Experience.scss";
 
 const Experience: React.FunctionComponent = () => {
 	return (
-		<div className="experience ">
+		<div className="experience" id="experience">
 			<Fade left>
 				<h1 className="title">Experience</h1>
 			</Fade>

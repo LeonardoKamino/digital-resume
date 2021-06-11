@@ -1,3 +1,5 @@
+@import "FluidType";
+
 .project-card {
 	background-color: #01152e !important;
 	box-shadow: 0 0 20px 0 rgba(100, 100, 100, 0.15);
@@ -8,32 +10,38 @@
 	.card-header {
 		background-color: #212933;
 		font-size: 0.9rem;
-		.circle-icon {
-			border-radius: 50%;
-			color: #222;
-			display: inline-block;
-			font-size: 10px;
-			height: 13px;
-			margin-right: 7px;
-			position: relative;
-			width: 13px;
-			.web-icon {
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translateX(-50%) translateY(-50%);
+		.icon-section {
+			padding: 0 0 0 12px;
+			.circle-icon {
+				border-radius: 50%;
+				color: #222;
+				display: inline-block;
+				font-size: 10px;
+				height: 0;
+				@include fluid-type(width, 900px, 1200px, 15%, 12%);
+				@include fluid-type(padding-bottom, 900px, 1200px, 15%, 12%);
+				margin-right: 7px;
+				position: relative;
+				.web-icon {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translateX(-50%) translateY(-50%);
+				}
+			}
+			.bg-red {
+				background-color: #ff605c;
+			}
+			.bg-yellow {
+				background-color: #ffbd44;
+			}
+			.bg-green {
+				background-color: #00ca4e;
 			}
 		}
-		.bg-red {
-			background-color: #ff605c;
-		}
-		.bg-yellow {
-			background-color: #ffbd44;
-		}
-		.bg-green {
-			background-color: #00ca4e;
-		}
+
 		.project-name {
+			padding: 0;
 			text-align: center;
 		}
 	}

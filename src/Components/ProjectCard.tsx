@@ -43,22 +43,16 @@ function ProjectCard(props: any) {
 	}
 
 	return (
-		<div className="col-md-4 my-4">
+		<div className=" col-md-6 col-lg-4  my-4">
 			<Slide bottom>
 				<div className="card project-card">
 					<div className="card-header">
 						<div className="columns">
 							<div className="row">
-								<div className="col">
-									<div className="circle-icon bg-red">
-										<FontAwesomeIcon icon="minus" className="web-icon" />
-									</div>
-									<div className="circle-icon bg-yellow">
-										<FontAwesomeIcon icon="expand-alt" className="web-icon" />
-									</div>
-									<div className="circle-icon bg-green">
-										<FontAwesomeIcon icon="times" className="web-icon" />
-									</div>
+								<div className="col icon-section">
+									<div className="circle-icon bg-red"></div>
+									<div className="circle-icon bg-yellow"></div>
+									<div className="circle-icon bg-green"></div>
 								</div>
 								<div className="col project-name">{project.title}</div>
 								<div className="col"></div>

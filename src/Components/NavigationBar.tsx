@@ -20,13 +20,14 @@ const headersData = [
 		href: "#about-me",
 	},
 	{
+		label: "Experience",
+		href: "#experience",
+	},
+	{
 		label: "Projects",
 		href: "#projects",
 	},
-	{
-		label: "Skills",
-		href: "#skills",
-	},
+
 	{
 		label: "Contact Me",
 		href: "#contact",
@@ -110,10 +111,12 @@ export default function NavigationBar(props: Props) {
 	};
 
 	const getNavBarChoices = () => {
-		return headersData.map(({ label, href }) => {
+		return headersData.map(({ label, href }, index) => {
 			return (
 				<li>
-					<a href={href}>{label}</a>
+					<a href={href} key={index}>
+						{label}
+					</a>
 				</li>
 			);
 		});

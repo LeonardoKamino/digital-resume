@@ -11,9 +11,11 @@
 	.container {
 		margin-top: 40px;
 		text-align: justify;
-		img {
-			@include fluid-type(width, 900px, 1200px, 90%, 75%);
-			margin: auto;
+		.img-section {
+			@include fluid-type(text-align, 900px, 1200px, center, justify);
+			img {
+				@include fluid-type(width, 900px, 1200px, 90%, 75%);
+			}
 		}
 		.description {
 			padding-top: 20px;

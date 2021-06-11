@@ -13,7 +13,7 @@ const Introduction: React.FunctionComponent = () => {
 			</Fade>
 			<div className="container">
 				<div className="row justify-content-center align-items-center">
-					<div className="col-md-6">
+					<div className="col-md-6 img-section">
 						<Zoom>
 							<img src={CPUProfile} alt="me" />
 						</Zoom>
