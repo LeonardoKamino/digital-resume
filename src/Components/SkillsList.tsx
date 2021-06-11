@@ -9,6 +9,7 @@ import Javascript from "../Media/Skills/Javascript.png";
 import Typescript from "../Media/Skills/Typescript.png";
 import Git from "../Media/Skills/Git.png";
 import Linux from "../Media/Skills/Linux.png";
+import Sass from "../Media/Skills/Sass.png";
 
 const SkillsList: any = [
 	{
@@ -28,6 +29,7 @@ const SkillsList: any = [
 			{ name: "Typescript", logo: Typescript },
 			{ name: "HTML5", logo: Html },
 			{ name: "CSS3", logo: Css },
+			{ name: "Sass", logo: Sass },
 		],
 	},
 	{

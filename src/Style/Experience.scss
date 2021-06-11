@@ -2,13 +2,7 @@
 
 .experience {
 	padding: 20px;
-	@include fluid-type(
-		margin,
-		900px,
-		1200px,
-		20px 15px 0 15px,
-		70px 40px 0 60px
-	);
+	@include fluid-type(margin, 900px, 1200px, 20px 15px 0 15px, 0px 40px 0 60px);
 	.title {
 		display: flex;
 		align-items: center;
