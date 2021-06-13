@@ -5,6 +5,7 @@ import NavigationBar from "../Components/NavigationBar";
 import AboutMe from "../Components/AboutMe";
 import Projects from "../Components/Projects";
 import Experience from "../Components/Experience";
+import Contact from "../Components/Contact";
 
 const Home: React.FunctionComponent = () => {
 	return (
@@ -16,6 +17,7 @@ const Home: React.FunctionComponent = () => {
 			<div className="transition"></div>
 			<Projects />
 			<div className="transition rotate-180"></div>
+			<Contact />
 		</div>
 	);
 };
