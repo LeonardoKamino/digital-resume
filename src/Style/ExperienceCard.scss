@@ -26,7 +26,6 @@
 	}
 	.right {
 		@include fluid-type(border-left, 900px, 1200px, none, 2px solid #333);
-
 		.duration {
 			color: #c0d0d5aa;
 			font-size: 0.9rem;

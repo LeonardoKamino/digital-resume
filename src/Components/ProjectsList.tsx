@@ -1,48 +1,33 @@
-import Screenshot from "../Media/Screenshot.png";
+import PersonalSite from "../Media/PersonalSite.png";
+import Hireflow from "../Media/Hireflow.png";
+import MoreComing from "../Media/Loading.png";
 
 const ProjectsList = [
 	{
 		title: "hireflow.com",
-		image: Screenshot,
+		image: Hireflow,
 		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit.Integer odio lectus, dapibus non pharetra eget, egestas sitamet sapien. Proin at dignissim mi. Cras hendrerit metusscelerisque egestas tincidunt. Nam velit leo, ultricies egetenim vitae, pellentesque commodo nisl. Nulla aliquam in sem atsemper",
-		skills: ["Typescript", "React", "Git", "Sass", "Bulma"],
-		deploymentLink: "https://www.google.com/",
-		githubLink: "https://github.com/",
+			"Hireflow is an internal tool developed with my sub-team at UBC Launch Pad design team. Its objective is to make the process of recruitment faster and centralized. Instead of having the data spread in multiple excels, forms, and emailing tools that require manual processing, our app allows to manage all the data and the whole application process in a single dashboard. My role in the teams was as Front-End developer creating views and React components",
+		skills: ["Typescript", "React", "Git", "CSS/Sass", "Bulma"],
+		deploymentLink: "https://hireflow-client.herokuapp.com",
+		githubLink: "https://github.com/ubclaunchpad/club-manager-client",
 	},
 	{
 		title: "leokamino.com",
-		image: Screenshot,
+		image: PersonalSite,
 		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit.Integer odio lectus, dapibus non pharetra eget, egestas sitamet sapien. Proin at dignissim mi. Cras hendrerit metusscelerisque egestas tincidunt. Nam velit leo, ultricies egetenim vitae, pellentesque commodo nisl. Nulla aliquam in sem atsemper",
-		skills: ["Typescript", "React", "Git", "Sass", "Bulma"],
+			"This is my personal website. Its objective is to work as my digital resume / portifolio, to show my experiences and projects I already worked on.",
+		skills: ["Typescript", "React", "HTML", "CSS/Sass", "Bootstrap 5"],
 		deploymentLink: "https://www.google.com/",
 		githubLink: "https://github.com/",
 	},
+
 	{
 		title: "More Coming...",
-		image: Screenshot,
+		image: MoreComing,
 		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit.Integer odio lectus, dapibus non pharetra eget, egestas sitamet sapien. Proin at dignissim mi. Cras hendrerit metusscelerisque egestas tincidunt. Nam velit leo, ultricies egetenim vitae, pellentesque commodo nisl. Nulla aliquam in sem atsempermet sapien. Proin at dignissim mi. Cras hendrerit metusscelerisque egestas tincidunt. Nam velit leo, ultricies egetenim vitae, pellentesque commodo nisl. Nulla aliquam in sem atsempe",
-		skills: ["Typescript", "React", "Git", "Sass", "Bulma"],
-		deploymentLink: "https://www.google.com/",
-		githubLink: "",
-	},
-	{
-		title: "More Coming...",
-		image: Screenshot,
-		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit.Integer odio lectus, dapibus non pharetra eget, egestas sitamet sapien. Proin at dignissim mi. Cras hendrerit metusscelerisque egestas tincidunt. Nam velit leo, ultricies egetenim vitae, pellentesque commodo nisl. Nulla aliquam in sem atsempermet sapien. Proin at dignissim mi. Cras hendrerit metusscelerisque egestas tincidunt. Nam velit leo, ultricies egetenim vitae, pellentesque commodo nisl. Nulla aliquam in sem atsempe",
-		skills: ["Typescript", "React", "Git", "Sass", "Bulma"],
-		deploymentLink: "https://www.google.com/",
-		githubLink: "",
-	},
-	{
-		title: "More Coming...",
-		image: Screenshot,
-		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit.Integer odio lectus, dapibus non pharetra eget, egestas sitamet sapien. Proin at dignissim mi. Cras hendrerit metusscelerisque egestas tincidunt. Nam velit leo, ultricies egetenim vitae, pellentesque commodo nisl. Nulla aliquam in sem atsempermet sapien. Proin at dignissim mi. Cras hendrerit metusscelerisque egestas tincidunt. Nam velit leo, ultricies egetenim vitae, pellentesque commodo nisl. Nulla aliquam in sem atsempe",
-		skills: ["Typescript", "React", "Git", "Sass", "Bulma"],
+			"Actively trying to create new amazing, useful and stylish projects. Check out later to see the projects that I will be working on. ",
+		skills: ["Stylish", "Useful", "Performance", "Elegant", "Creative"],
 		deploymentLink: "",
 		githubLink: "",
 	},

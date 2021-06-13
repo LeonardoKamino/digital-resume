@@ -9,7 +9,7 @@ import "../Style/Contact.scss";
 class Contact extends React.Component {
 	render(): React.ReactNode {
 		return (
-			<div className="contact">
+			<div className="contact" id="contact">
 				<Slide bottom>
 					<p className="title">Contact Me</p>
 				</Slide>

@@ -7,7 +7,7 @@ const ExperienceList = [
 		role: "Front-End Developer",
 		duration: "September 2020 - Present",
 		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit.Integer odio lectus, dapibus non pharetra eget, egestas sitamet sapien. Proin at dignissim mi. Cras hendrerit metusscelerisque egestas tincidunt. Nam velit leo, ultricies egetenim vitae, pellentesque commodo nisl. Nulla aliquam in sem atsemper. Praesent hendrerit lectus ut metus viverra, a luctusfelis volutpat. Nunc risus nisi, dapibus quis euismod non,finibus in magna.",
+			"Launch Pad is UBC's one and only student-run software development team, with the goal of creating interesting apps in a professional environment. In a team of 7 with developers and designers, we developed an internal tool to help centralize the team's recruitment process. I mainly worked in the front-end of the application creating Views and React Components.",
 		skills: ["TypeScript", "React", "Bulma"],
 		logo: LaunchPadLogo,
 	},
@@ -16,7 +16,7 @@ const ExperienceList = [
 		role: "Looking for Co-op Positions",
 		duration: "Summer 2022",
 		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit.Integer odio lectus, dapibus non pharetra eget, egestas sitamet sapien. Proin at dignissim mi. Cras hendrerit metusscelerisque egestas tincidunt. Nam velit leo, ultricies egetenim vitae, pellentesque commodo nisl. Nulla aliquam in sem atsemper. Praesent hendrerit lectus ut metus viverra, a luctusfelis volutpat. Nunc risus nisi, dapibus quis euismod non,finibus in magna.",
+			"I am currently looking for co-op positions for the 2022 Summer. If you are hiring software / computer engineers, has an interest project/idea that I could help, or just want to say hi fell free to contact me",
 		skills: ["Communication", "Proactive", "Hard Worker"],
 		logo: LoadingGear,
 	},

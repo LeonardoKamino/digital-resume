@@ -21,17 +21,13 @@ const Introduction: React.FunctionComponent = () => {
 					<div className="col-md-6">
 						<Fade>
 							<p className="description">
-								Mauris at posuere risus. Curabitur orci eros, pretium eu cursus
-								sed, aliquam sed leo. Integer scelerisque ullamcorper accumsan.
-								Ut id lectus ligula. Maecenas dignissim elit quis pharetra
-								feugiat. Mauris scelerisque felis eget arcu maximus scelerisque.
-								Vestibulum in ornare nibh. Ut tortor nisl, placerat sit amet
-								justo eu, malesuada Donec volutpat aliquet nunc id faucibus. Sed
-								tincidunt cursus sem, vitae pellentesque ex mattis in. <br />
-								Etiam dictum facilisis diam, ac feugiat nisl. Donec non luctus
-								ipsum. Quisque pretium sollicitudin nulla ullamcorper tincidunt.
-								Suspendisse tempor aliquam dui, id tempor justo convallis a.
-								Aenean congue pretium ullamcorper. Sed ut sagittis ex.{" "}
+								Hello! I am Leonardo Kamino Barros, a 19 years old completing a
+								BASc in Computer Engineering at the university of British
+								Columbia. I aspire to be a software engineer, helping to create
+								cutting edge technology in the benefit of others. Always looking
+								for new challenges and to learn new things. <br /> <br />
+								When I am not coding or going to classes, I enjoy running, going
+								to the gym and hanging out with friends.
 							</p>
 						</Fade>
 					</div>
