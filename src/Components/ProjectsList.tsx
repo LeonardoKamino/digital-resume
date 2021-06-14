@@ -7,7 +7,7 @@ const ProjectsList = [
 		title: "hireflow.com",
 		image: Hireflow,
 		description:
-			"Hireflow is an internal tool developed with my sub-team at UBC Launch Pad design team. Its objective is to make the process of recruitment faster and centralized. Instead of having the data spread in multiple excels, forms, and emailing tools that require manual processing, our app allows to manage all the data and the whole application process in a single dashboard. My role in the teams was as Front-End developer creating views and React components",
+			"Hireflow is an internal tool developed by my sub-team at UBC Launch Pad design team. Its objective is to make the process of recruitment faster and centralized. Instead of having the data spread in multiple excels, forms, and emailing tools that require manual processing, our app allows to manage all the data and the whole application process in a single dashboard. My role in the teams was as Front-End developer creating views and React components",
 		skills: ["Typescript", "React", "Git", "CSS/Sass", "Bulma"],
 		deploymentLink: "https://hireflow-client.herokuapp.com",
 		githubLink: "https://github.com/ubclaunchpad/club-manager-client",

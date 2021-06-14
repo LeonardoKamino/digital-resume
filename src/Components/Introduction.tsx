@@ -22,7 +22,7 @@ const Introduction: React.FunctionComponent = () => {
 						<Fade>
 							<p className="description">
 								Hello! I am Leonardo Kamino Barros, a 19 years old completing a
-								BASc in Computer Engineering at the university of British
+								BASc in Computer Engineering at The University of British
 								Columbia. I aspire to be a software engineer, helping to create
 								cutting edge technology in the benefit of others. Always looking
 								for new challenges and to learn new things. <br /> <br />

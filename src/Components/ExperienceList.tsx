@@ -16,7 +16,7 @@ const ExperienceList = [
 		role: "Looking for Co-op Positions",
 		duration: "Summer 2022",
 		description:
-			"I am currently looking for co-op positions for the 2022 Summer. If you are hiring software / computer engineers, has an interest project/idea that I could help, or just want to say hi fell free to contact me",
+			"I am currently looking for co-op positions for the 2022 Summer. If you are hiring software / computer engineers, has an interest project/idea that I could help or just want to say hi, fell free to contact me",
 		skills: ["Communication", "Proactive", "Hard Worker"],
 		logo: LoadingGear,
 	},
