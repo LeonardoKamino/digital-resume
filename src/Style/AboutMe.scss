@@ -1,16 +1,14 @@
-@import "FluidType";
-
 .about-me {
-	@include fluid-type(
-		margin,
-		900px,
-		1200px,
-		20px 15px 0 15px,
-		70px 40px 0 60px
-	);
+	margin: 20px 15px 0 15px;
+	@media screen and (min-width: 900px) {
+		margin: 70px 40px 0 60px;
+	}
 	.title {
 		display: flex;
 		align-items: center;
-		@include fluid-type(padding, 900px, 1200px, 0 0, 0 4em);
+		padding: 0;
+		@media screen and (min-width: 900px) {
+			padding: 0 4em;
+		}
 	}
 }

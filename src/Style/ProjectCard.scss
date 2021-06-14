@@ -1,5 +1,3 @@
-@import "FluidType";
-
 .project-card {
 	background-color: #01152e !important;
 	box-shadow: 0 0 20px 0 rgba(100, 100, 100, 0.15);
@@ -18,8 +16,12 @@
 				display: inline-block;
 				font-size: 10px;
 				height: 0;
-				@include fluid-type(width, 900px, 1200px, 15%, 12%);
-				@include fluid-type(padding-bottom, 900px, 1200px, 15%, 12%);
+				width: 15%;
+				padding-bottom: 15%;
+				@media screen and (min-width: 900px) {
+					width: 12%;
+					padding-bottom: 12%;
+				}
 				margin-right: 7px;
 				position: relative;
 				.web-icon {
