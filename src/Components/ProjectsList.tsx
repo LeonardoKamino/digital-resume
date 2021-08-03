@@ -26,7 +26,7 @@ const ProjectsList = [
 		title: "sortingvisualizer.com",
 		image: SortingVisualizer,
 		description:
-			"The objective of this project is to help me improve my front end skills, while learning more about sorting algorithms. My expectations is to keep it as a on going project, updating it as I learn more algorithms.",
+			"I decided to do this project to help me improve my front end skills, while learning more about sorting algorithms. My expectations is to keep it as an on going project, updating it as I learn more algorithms. This project was inspired by Clément Mihailescu.",
 		skills: [ "Sorting Algorithms", "HTML", "CSS", "JavaScript"],
 		deploymentLink: "https://leo-sortingvisualizer.netlify.app",
 		githubLink: "https://github.com/LeonardoKamino/sorting_visualizer",
