@@ -21,9 +21,9 @@ const Introduction: React.FunctionComponent = () => {
 					<div className="col-md-6">
 						<Fade>
 							<p className="description">
-								Hello! I am Leonardo Kamino Barros, a 19 years old completing a
+								Hello! I am Leonardo Kamino Barros, a student completing a
 								BASc in Computer Engineering at The University of British
-								Columbia. I aspire to be a software engineer, helping to create
+								Columbia. I aspire to be an engineer, helping to create
 								cutting edge technology in the benefit of others. Always looking
 								for new challenges and to learn new things. <br /> <br />
 								When I am not coding or going to classes, I enjoy running, going

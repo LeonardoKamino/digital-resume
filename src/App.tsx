@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import {
 	faGithub,
@@ -31,9 +31,9 @@ function App() {
 	return (
 		<div className="App" style={{ fontFamily: "Roboto" }}>
 			<Router>
-				<Switch>
-					<Route path="/" exact component={Home} />
-				</Switch>
+				<Routes>
+					<Route path="/" element={<Home />} />
+				</Routes>
 			</Router>
 		</div>
 	);

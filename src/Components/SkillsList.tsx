@@ -10,6 +10,12 @@ import Typescript from "../Media/Skills/Typescript.png";
 import Git from "../Media/Skills/Git.png";
 import Linux from "../Media/Skills/Linux.png";
 import Sass from "../Media/Skills/Sass.png";
+import Java from "../Media/Skills/Java.png";
+import ARM from "../Media/Skills/ARM.jpg";
+import Verilog from "../Media/Skills/Verilog.png";
+import Drupal from "../Media/Skills/Drupal.png";
+import Wordpress from "../Media/Skills/Wordpress.png";
+
 
 const SkillsList: any = [
 	{
@@ -30,6 +36,9 @@ const SkillsList: any = [
 			{ name: "HTML5", logo: Html },
 			{ name: "CSS3", logo: Css },
 			{ name: "Sass", logo: Sass },
+			{ name: "Java", logo: Java},
+			{ name: "ARM", logo: ARM},
+			{ name: "Verilog", logo: Verilog}
 		],
 	},
 	{
@@ -37,6 +46,8 @@ const SkillsList: any = [
 		list: [
 			{ name: "Git", logo: Git },
 			{ name: "Linux", logo: Linux },
+			{ name: "Wordpress", logo: Wordpress },
+			{ name: "Drupal", logo: Drupal }
 		],
 	},
 ];
