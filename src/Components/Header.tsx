@@ -18,7 +18,7 @@ const Header: React.FunctionComponent = () => {
 					</Fade>
 					<Slide bottom>
 						<h2 className="description">
-							A 2nd year Computer Engineering student @ UBC, Vancouver. <br />
+							Computer Engineering student @ UBC, Vancouver. <br />
 							Passionate about programming and technology.
 						</h2>
 					</Slide>

@@ -26,8 +26,8 @@ const Introduction: React.FunctionComponent = () => {
 								Columbia. I aspire to be an engineer, helping to create
 								cutting edge technology in the benefit of others. Always looking
 								for new challenges and to learn new things. <br /> <br />
-								When I am not coding or going to classes, I enjoy running, going
-								to the gym and hanging out with friends.
+								When I am not coding or going to classes, I enjoy cycling, going
+								to the gym and skiing.
 							</p>
 						</Fade>
 					</div>
