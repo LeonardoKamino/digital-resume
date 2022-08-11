@@ -8,7 +8,7 @@ interface IExperienceCardProps {
 	company: string;
 	role: string;
 	duration: string;
-	description: string;
+	description: any;
 	skills: string[];
 	logo: string;
 }
@@ -34,7 +34,7 @@ class ExperienceCard extends React.Component<IExperienceCardProps> {
 									<FontAwesomeIcon icon="clock" className="icon" />
 									{this.props.duration}
 								</p>
-								<p className="description">{this.props.description}</p>
+								<div className="description">{this.props.description}</div>
 
 								<div className="skill-section">
 									{this.props.skills.map((skill, index) => (
