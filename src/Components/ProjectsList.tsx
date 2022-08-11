@@ -1,11 +1,21 @@
 import PersonalSite from "../Media/PersonalSite.png";
 import Hireflow from "../Media/Hireflow.png";
 import SortingVisualizer from "../Media/SortingVisualizer.png";
-import MoreComing from "../Media/Loading.png";
+import BatBot from "../Media/BatBot.gif";
 import RISC from "../Media/RISC.png";
+import AutomaticVaccination from "../Media/AutomaticVaccination.png";
 
 
 const ProjectsList = [
+	{
+		title: "Vaccination Status Checker",
+		image: AutomaticVaccination,
+		description:
+			"This project was developed during the CPEN 291 course. It consists of an autonomous system to allow or deny access into establishment based on COVID-19 vaccination status, self-assessment, and temperature, including an admin portal to visualize data and notify clients in case of exposure to the virus. I was responsible to lead the team and plan the project architecture: technologies used, integration between components, and user flow. In addition to this, I created APIs to connect views with the Arduino components via Node.js and Johnny-Five platform, developed front-end views in React, and the mass emails system via SendGrid mail.",
+		skills: ["Project Management", "Node.js", "React", "Johnny-Five", "Arduino", "Git"],
+		deploymentLink: "http://jakerubin.ca/projects/covidapp.html",
+		githubLink: "",
+	},
 	{
 		title: "hireflow.com",
 		image: Hireflow,
@@ -45,12 +55,12 @@ const ProjectsList = [
 	},
 
 	{
-		title: "More Coming",
-		image: MoreComing,
+		title: "BatBot",
+		image: BatBot,
 		description:
-			"Actively trying to create new amazing, useful and stylish projects. Check out later to see the projects that I will be working on. ",
-		skills: ["Stylish", "Useful", "Performance", "Elegant", "Creative"],
-		deploymentLink: "",
+			"This is another project for our CPEN 291 course. During this project we created a dancing robot with sensors, server motors, display, Led and a 3D-printed body. The robot brain was an Itsy Bitsy M4 Express programmed with Circuit Python. The decision for the Batman theme was a weight distribution solution, but it added a nice aesthetics to the final design. ",
+		skills: ["Cirrcuit Python", "Robotics", "Itsy Bitsy M4 express", "Adafruit", "Soldering"],
+		deploymentLink: "https://www.youtube.com/watch?v=K7ILOBpgLYQ&t=1s&ab_channel=JakeRubin",
 		githubLink: "",
 	},
 ];
