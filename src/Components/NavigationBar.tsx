@@ -76,40 +76,6 @@ export default function NavigationBar(props: Props) {
 		);
 	}
 
-	const displayMobile = () => {
-		const handleDrawerOpen = () =>
-			setState((prevState: any) => ({ ...prevState, drawerOpen: true }));
-		const handleDrawerClose = () =>
-			setState((prevState) => ({ ...prevState, drawerOpen: false }));
-
-		return (
-			<Toolbar className="toolbar">
-				<IconButton
-					{...{
-						edge: "start",
-						color: "inherit",
-						"aria-label": "menu",
-						"aria-haspopup": "true",
-						onClick: handleDrawerOpen,
-					}}
-				>
-					<MenuIcon />
-				</IconButton>
-				<Drawer
-					{...{
-						anchor: "left",
-						open: drawerOpen,
-						onClose: handleDrawerClose,
-					}}
-				>
-					<div className="drawer d-flex align-content-center flex-wrap">
-						<ul>{getNavBarChoices()}</ul>
-					</div>
-				</Drawer>
-			</Toolbar>
-		);
-	};
-
 	const getNavBarChoices = () => {
 		return headersData.map(({ label, href }, index) => {
 			return (
@@ -126,7 +92,7 @@ export default function NavigationBar(props: Props) {
 		<React.Fragment>
 			<CssBaseline />
 			<HideOnScroll>
-				<AppBar>{mobileView ? displayMobile() : displayDesktop()}</AppBar>
+				<AppBar>{mobileView ? "" : displayDesktop()}</AppBar>
 			</HideOnScroll>
 		</React.Fragment>
 	);

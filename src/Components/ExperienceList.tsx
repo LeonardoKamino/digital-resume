@@ -2,18 +2,34 @@ import LaunchPadLogo from "../Media/LaunchpadLogo.png";
 import LoadingGear from "../Media/LoadingGear.gif";
 import UBCEngineeringLogo from "../Media/UBCEngineeringLogo.png";
 import ChangeHealthcareLogo from "../Media/ChangeHealthcareLogo.jpg";
+import MotorolaLogo from "../Media/Motorola.jpg";
 
 
 const ExperienceList = [
 	{
-		company: "Change Healthcare",
-		role: "Software Development Engineer Co-op",
-		duration: "May 2022 - Present",
+		company: "Motorola Solutions - Avigilon",
+		role: "Software Developer",
+		duration: "Jan - Aug 2023",
 		description: 
 		<><ul>
-			<li>Responsible for documenting, creating, and sanity testing packages of patches for existing medical devices.</li>
-			<li>Created and tested proof of concept unified patch package, to mitigate confusion between support and client. Reduced from 5 to only 2 types of packages.</li>
-			<li>Independently working on improving web-based internal tool to create more confidence in the process of PTF Packaging. Communicating with stakeholders, designing low-level wireframes, and implementing code changes.</li>
+			<li>Developed new features for the ACM portal following MCV design architecture. Responsible for creating new Views and APIs for the new functionalities.</li>
+			<li>Created and integrated React components into Ruby on Rails codebase using Direflow library.</li>
+			<li>Improved reliability and efficiency of unit tests using the Rspec tool.</li>
+			<li>Responsible for end-to-end and functional testing features of the ACM portal new release candidates.</li>
+		</ul></>,
+		skills: ["Ruby on Rails", "Sass", "React", "Rspec"],	
+		logo: MotorolaLogo,
+	},
+	{
+		company: "Change Healthcare",
+		role: "Software Development Engineer",
+		duration: "May - December 2022",
+		description: 
+		<><ul>
+			<li>Enhanced web-based internal tool using Angula. Responsible for end-to-end delivery of the project, collaborating with stakeholders, designing wireframes, and implementing code changes.</li>
+			<li>Mentored new co-op students, providing onboarding support, and conducting weekly check-in meetings to track progress, address challenges, and answer questions.</li>
+			<li>Documented, created, and performed sanity testing on software patch packages for medical devices.</li>
+			<li>Streamlined patch package management by creating and testing a unified proof of concept solution, reducing package types from 5 to 2 and minimizing confusion between support and clients.</li>
 		</ul></>,
 		skills: [],	
 		logo: ChangeHealthcareLogo,
@@ -47,9 +63,9 @@ const ExperienceList = [
 	{
 		company: "Loading...",
 		role: "Looking for Co-op Positions",
-		duration: "Winter 2023",
+		duration: "Summer 2024",
 		description:
-			"I am currently looking for co-op positions for the 2023 Summer. If you are hiring software / computer engineers, has an interest project/idea that I could help or just want to say hi, fell free to contact me",
+			"I am currently looking for co-op positions for the 2024 Summer. If you are hiring software / computer engineers, has an interest project/idea that I could help or just want to say hi, fell free to contact me",
 		skills: ["Communication", "Proactive", "Hard Worker"],
 		logo: LoadingGear,
 	},

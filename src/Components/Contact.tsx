@@ -19,7 +19,7 @@ class Contact extends React.Component {
 						<Slide left>
 							<div className="col-md-4">
 								<p className="situation">
-									I am currently looking for Winter 2023 Co-op positions. If you
+									I am currently looking for Summer 2024 Co-op positions. If you
 									are hiring software/ computer engineers, fell free to reach me
 									in any plataform
 								</p>
