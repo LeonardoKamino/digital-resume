@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Slide from "react-reveal/Slide";
+import { useNavigate } from "react-router-dom";
 
 import "../Style/ProjectCard.scss";
 
 function ProjectCard(props: any) {
 	const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
 	const project = props.project;
+	const navigate = useNavigate();
 
 	useEffect(() => {
 		window.addEventListener("resize", () => {
@@ -19,7 +21,7 @@ function ProjectCard(props: any) {
 			return (
 				<div className="skills-mobile">
 					{project.skills.map((skill: string, index: number) => (
-						<p className="skill" key={index}>
+						<p className="skill-item" key={index}>
 							{skill}
 						</p>
 					))}
@@ -33,7 +35,7 @@ function ProjectCard(props: any) {
 			return (
 				<div className="middle">
 					{project.skills.map((skill: string, index: number) => (
-						<p className="skill" key={index}>
+						<p className="skill-item" key={index}>
 							{skill}
 						</p>
 					))}
@@ -42,10 +44,14 @@ function ProjectCard(props: any) {
 		}
 	}
 
+	const handleCardClick = () => {
+		navigate(`/projects/${project.id}`);
+	};
+
 	return (
 		<div className=" col-md-6 col-lg-4  my-4">
 			<Slide bottom>
-				<div className="card project-card">
+				<div className="card project-card" onClick={handleCardClick} >
 					<div className="card-header">
 						<div className="columns">
 							<div className="row">
@@ -64,20 +70,8 @@ function ProjectCard(props: any) {
 						{RenderSkillsDesktop()}
 					</div>
 					<div className="card-body">
-						<p className="card-text">{project.description}</p>
+						<p className="card-text">{project.summary}</p>
 						{RenderSkillsMobile()}
-					</div>
-					<div className="card-links">
-						{project.githubLink ? (
-							<a href={project.githubLink} target="_blank" rel="noreferrer">
-								<FontAwesomeIcon icon={["fab", "github"]} className="link" />
-							</a>
-						) : null}
-						{project.deploymentLink ? (
-							<a href={project.deploymentLink} target="_blank" rel="noreferrer">
-								<FontAwesomeIcon icon="external-link-alt" className="link" />
-							</a>
-						) : null}
 					</div>
 				</div>
 			</Slide>

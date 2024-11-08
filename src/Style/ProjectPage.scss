@@ -1,0 +1,39 @@
+.project-page {
+    
+    .content-container{
+        font-size: 1.25rem;
+        padding: 0 20px;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin: 1rem 0 0 0;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-subheading{
+        font-size: 1.05rem;
+        span {
+            margin-right: 0.5rem;
+        }
+    }
+
+    .bullet-points-list {
+        li {
+            margin: 0.5rem 0;
+        }
+    }
+
+    .links {
+        margin-top: 1rem;
+    }
+
+    .project-description {
+        margin: 1rem 0;
+    }
+
+}

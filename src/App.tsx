@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home";
 import {
 	faGithub,
 	faLinkedin,
@@ -15,6 +14,11 @@ import {
 	faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 
+import Home from "./Pages/Home";
+import ProjectPage from "./Pages/ProjectPage";
+import ProjectsPage from "./Pages/ProjectsPage";
+import "./App.scss";
+
 library.add(
 	faClock,
 	faExpandAlt,
@@ -27,12 +31,15 @@ library.add(
 	faEnvelope
 );
 
+
 function App() {
 	return (
 		<div className="App" style={{ fontFamily: "Roboto" }}>
 			<Router>
 				<Routes>
 					<Route path="/" element={<Home />} />
+					<Route path="projects/:id" element={<ProjectPage />} />
+					<Route path="/projects" element={<ProjectsPage />} />
 				</Routes>
 			</Router>
 		</div>
