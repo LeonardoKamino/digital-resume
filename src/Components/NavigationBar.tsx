@@ -1,5 +1,5 @@
 import AppBar from "@material-ui/core/AppBar";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Toolbar from "@material-ui/core/Toolbar";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import React  from "react";
@@ -16,12 +16,12 @@ const headersData = [
 
 export default function NavigationBar(props: Props) {
 	const location = useLocation();
+	const navigate = useNavigate();
 
 	// Function to handle navigation between Home and Projects
 	function handleNavigationClick(href: string) {
 		if (location.pathname !== href) {
-			// Navigate to the target page
-			window.location.href = href;
+			navigate(href);
 		}
 	}
 
