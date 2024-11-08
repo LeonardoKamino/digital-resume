@@ -1,6 +1,6 @@
 import React from 'react';
 import NavigationBar from '../Components/NavigationBar';
-import ProjectsList from '../Components/ProjectsList'; 
+import ProjectsList from '../Data/ProjectsList'; 
 import ProjectCard from '../Components/ProjectCard';
 import '../Style/ProjectsPage.scss';
 

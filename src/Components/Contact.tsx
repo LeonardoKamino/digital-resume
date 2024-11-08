@@ -14,9 +14,7 @@ class Contact extends React.Component {
 					<div className="row align-items-center justify-content-evenly">
 						<div className="col-md-4">
 							<p className="situation">
-								I am currently looking for Summer 2024 Co-op positions. If you
-								are hiring software/ computer engineers, fell free to reach me
-								in any plataform
+							I am actively looking for full-time positions in software engineering upon my graduation in May 2025. If you are hiring software engineers or have exciting projects, please reach out.
 							</p>
 						</div>
 						<div className="col-md-4">

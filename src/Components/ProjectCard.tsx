@@ -21,7 +21,7 @@ function ProjectCard(props: any) {
 			return (
 				<div className="skills-mobile">
 					{project.skills.map((skill: string, index: number) => (
-						<p className="skill" key={index}>
+						<p className="skill-item" key={index}>
 							{skill}
 						</p>
 					))}
@@ -35,7 +35,7 @@ function ProjectCard(props: any) {
 			return (
 				<div className="middle">
 					{project.skills.map((skill: string, index: number) => (
-						<p className="skill" key={index}>
+						<p className="skill-item" key={index}>
 							{skill}
 						</p>
 					))}
@@ -70,7 +70,7 @@ function ProjectCard(props: any) {
 						{RenderSkillsDesktop()}
 					</div>
 					<div className="card-body">
-						<p className="card-text">{project.description}</p>
+						<p className="card-text">{project.summary}</p>
 						{RenderSkillsMobile()}
 					</div>
 				</div>

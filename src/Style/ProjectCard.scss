@@ -71,28 +71,10 @@
 			width: 80%;
 		}
 	}
-	.skill {
-		background-color: #212933;
-		color: #cacbd9ff;
-		display: inline-block;
-		font-size: 1rem;
-		margin: 12px;
-		padding: 4px 12px;
-	}
 	.image-container:hover .image {
 		opacity: 0.3;
 	}
 	.image-container:hover .middle {
 		opacity: 1;
-	}
-
-	.card-links {
-		padding: 0 1rem 0 1rem;
-		font-size: 2rem;
-		text-align: right;
-		.link {
-			color: #e1f2f788;
-			margin: 0 0 7px 22px;
-		}
 	}
 }

@@ -1,9 +1,9 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 import ProjectCard from "./ProjectCard";
-import ProjectsList from "./ProjectsList";
+import ProjectsList from "../Data/ProjectsList";
 import { useNavigate } from "react-router-dom";
-
+import { Button } from "@material-ui/core";
 
 import "../Style/Projects.scss";
 
@@ -27,9 +27,13 @@ const ProjectsSpotlights: React.FunctionComponent = () => {
 			</div>
 
 			<div className="view-all-button">
-				<button onClick={() => navigate("/projects")}>
-					View All Projects
-				</button>
+			<Button 
+				variant="contained" 
+				className="link-button" 
+				onClick={() => navigate("/projects")}
+			>
+				See All Projects
+			</Button>
 			</div>		
 		</div>
 	);

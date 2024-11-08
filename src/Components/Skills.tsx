@@ -1,5 +1,5 @@
 import React from "react";
-import SkillsList from "./SkillsList";
+import SkillsList from "../Data/SkillsList";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 

@@ -13,7 +13,7 @@ const Home: React.FunctionComponent = () => {
 			<NavigationBar />
 			<Header />
 			<div className="content-container">
-				<Skills />
+				{/* <Skills /> */}
 				<Experience />
 				<div className="transition"></div>
 				<ProjectsSpotlights />
