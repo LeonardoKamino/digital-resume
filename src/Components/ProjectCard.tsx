@@ -55,13 +55,12 @@ function ProjectCard(props: any) {
 					<div className="card-header">
 						<div className="columns">
 							<div className="row">
-								<div className="col icon-section">
+								<div className="col icon-section" style={{flex: 1}}>
 									<div className="circle-icon bg-red"></div>
 									<div className="circle-icon bg-yellow"></div>
 									<div className="circle-icon bg-green"></div>
 								</div>
-								<div className="col project-name">{project.title}</div>
-								<div className="col"></div>
+								<div className="col  project-name" style={{flex: 2}}>{project.title}</div>
 							</div>
 						</div>
 					</div>

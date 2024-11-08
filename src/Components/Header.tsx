@@ -19,7 +19,7 @@ const Header: React.FunctionComponent = () => {
 					<Slide bottom>
 						<h2 className="description">
 							Computer Engineering student @ UBC, Vancouver. <br />
-							Passionate about programming and technology.
+							Looking for new grad opportunities for May 2025.
 						</h2>
 					</Slide>
 				</div>

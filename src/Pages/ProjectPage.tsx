@@ -20,10 +20,11 @@ const ProjectPage: React.FC = () => {
         <div className='content-container'>
           <img src={project.image} alt={project.title} />
           <h1>{project.title}</h1>
-          <p className='project-subheading'>
+          <div className='project-subheading'>
+            <h4>{project.summary}</h4>
             <span className='project-date'>{project.date}</span>
             <span className='project-status'>Status: {project.status}</span>
-          </p>
+          </div>
           <p className='project-description'>{project.description}</p>
           <ul className='bullet-points-list'>
             {project.bulletPoints?.map(feature => (
