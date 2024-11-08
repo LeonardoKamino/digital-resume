@@ -17,9 +17,7 @@ const ProjectsSpotlights: React.FunctionComponent = () => {
 
 	return (
 		<div className="projects" id="projects">
-			<Fade top>
-				<p className="title">Projects</p>
-			</Fade>
+			<h2 className="title">Projects</h2>
 			<div className="row justify-content-center ">
 				{projects.map((project) => (
 					<ProjectCard project={project} key={project.title} />

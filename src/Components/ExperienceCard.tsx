@@ -38,9 +38,7 @@ class ExperienceCard extends React.Component<IExperienceCardProps> {
 
 								<div className="skill-section">
 									{this.props.skills.map((skill, index) => (
-										<Fade right big key={index}>
-											<p className="skill-item">{skill}</p>
-										</Fade>
+										<p className="skill-item">{skill}</p>
 									))}
 								</div>
 							</div>
