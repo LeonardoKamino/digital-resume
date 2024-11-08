@@ -18,7 +18,9 @@ html, .page{
 .content-container {
 	max-width: 1400px; /* Adjust this value as needed */
 	margin: 0 auto; /* Center the content */
-	padding: 0 20px; /* Optional padding for spacing */
+	@media screen and (min-width: 900px) {
+		padding: 0 20px;
+	}
 }
 
 .skill-item {

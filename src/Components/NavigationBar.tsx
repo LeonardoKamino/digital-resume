@@ -2,7 +2,7 @@ import AppBar from "@material-ui/core/AppBar";
 import { useLocation } from "react-router-dom";
 import Toolbar from "@material-ui/core/Toolbar";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import React, { useState, useEffect } from "react";
+import React  from "react";
 import "../Style/NavigationBar.scss";
 
 interface Props {
@@ -15,21 +15,7 @@ const headersData = [
 ];
 
 export default function NavigationBar(props: Props) {
-	const [mobileView, setMobileView] = useState(false);
 	const location = useLocation();
-
-	useEffect(() => {
-		const setResponsiveness = () => {
-			setMobileView(window.innerWidth < 900);
-		};
-
-		setResponsiveness();
-		window.addEventListener("resize", setResponsiveness);
-
-		return () => {
-			window.removeEventListener("resize", setResponsiveness);
-		};
-	}, []);
 
 	// Function to handle navigation between Home and Projects
 	function handleNavigationClick(href: string) {
@@ -56,8 +42,7 @@ export default function NavigationBar(props: Props) {
 		));
 	};
 
-	// Desktop navbar display
-	function displayDesktop() {
+	function displayNavbar() {
 		return (
 			<Toolbar className="toolbar">
 				<div className="desktop-list">
@@ -71,7 +56,7 @@ export default function NavigationBar(props: Props) {
 		<>
 			<CssBaseline />
 			<AppBar position="static">
-				{!mobileView && displayDesktop()}
+				{ displayNavbar()}
 			</AppBar>
 		</>
 	);
