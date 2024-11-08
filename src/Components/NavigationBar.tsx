@@ -1,13 +1,8 @@
 import AppBar from "@material-ui/core/AppBar";
+import { useLocation } from "react-router-dom";
 import Toolbar from "@material-ui/core/Toolbar";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import useScrollTrigger from "@material-ui/core/useScrollTrigger";
-import Slide from "@material-ui/core/Slide";
 import React, { useState, useEffect } from "react";
-import MenuIcon from "@material-ui/icons/Menu";
-import IconButton from "@material-ui/core/IconButton";
-import Drawer from "@material-ui/core/Drawer";
-
 import "../Style/NavigationBar.scss";
 
 interface Props {
@@ -15,57 +10,53 @@ interface Props {
 }
 
 const headersData = [
-	{
-		label: "About Me",
-		href: "#about-me",
-	},
-	{
-		label: "Experience",
-		href: "#experience",
-	},
-	{
-		label: "Projects",
-		href: "#projects",
-	},
-
-	{
-		label: "Contact Me",
-		href: "#contact",
-	},
+	{ label: "Home", href: "/" },
+	{ label: "Projects", href: "/projects" },
 ];
 
-function HideOnScroll({ children }: Props) {
-	const trigger = useScrollTrigger();
-	return (
-		<Slide appear={true} direction="down" in={trigger}>
-			{children}
-		</Slide>
-	);
-}
-
 export default function NavigationBar(props: Props) {
-	const [state, setState] = useState({
-		mobileView: false,
-		drawerOpen: false,
-	});
-
-	const { mobileView, drawerOpen } = state;
+	const [mobileView, setMobileView] = useState(false);
+	const location = useLocation();
 
 	useEffect(() => {
 		const setResponsiveness = () => {
-			return window.innerWidth < 900
-				? setState((prevState) => ({ ...prevState, mobileView: true }))
-				: setState((prevState) => ({ ...prevState, mobileView: false }));
+			setMobileView(window.innerWidth < 900);
 		};
 
 		setResponsiveness();
-		window.addEventListener("resize", () => setResponsiveness());
+		window.addEventListener("resize", setResponsiveness);
 
 		return () => {
-			window.removeEventListener("resize", () => setResponsiveness());
+			window.removeEventListener("resize", setResponsiveness);
 		};
 	}, []);
 
+	// Function to handle navigation between Home and Projects
+	function handleNavigationClick(href: string) {
+		if (location.pathname !== href) {
+			// Navigate to the target page
+			window.location.href = href;
+		}
+	}
+
+	// Generate navbar choices
+	const getNavBarChoices = () => {
+		return headersData.map(({ label, href }, index) => (
+			<li key={index}>
+				<a
+					href={href}
+					onClick={(e) => {
+						e.preventDefault();
+						handleNavigationClick(href);
+					}}
+				>
+					{label}
+				</a>
+			</li>
+		));
+	};
+
+	// Desktop navbar display
 	function displayDesktop() {
 		return (
 			<Toolbar className="toolbar">
@@ -76,24 +67,12 @@ export default function NavigationBar(props: Props) {
 		);
 	}
 
-	const getNavBarChoices = () => {
-		return headersData.map(({ label, href }, index) => {
-			return (
-				<li>
-					<a href={href} key={index}>
-						{label}
-					</a>
-				</li>
-			);
-		});
-	};
-
 	return (
-		<React.Fragment>
+		<>
 			<CssBaseline />
-			<HideOnScroll>
-				<AppBar>{mobileView ? "" : displayDesktop()}</AppBar>
-			</HideOnScroll>
-		</React.Fragment>
+			<AppBar position="static">
+				{!mobileView && displayDesktop()}
+			</AppBar>
+		</>
 	);
 }

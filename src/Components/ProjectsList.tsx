@@ -8,6 +8,8 @@ import AutomaticVaccination from "../Media/AutomaticVaccination.png";
 
 const ProjectsList = [
 	{
+		id: 1,
+		spotlight: true,
 		title: "Vaccination Status Checker",
 		image: AutomaticVaccination,
 		description:
@@ -17,6 +19,8 @@ const ProjectsList = [
 		githubLink: "",
 	},
 	{
+		id: 2,
+		spotlight: false,
 		title: "hireflow.com",
 		image: Hireflow,
 		description:
@@ -26,6 +30,8 @@ const ProjectsList = [
 		githubLink: "https://github.com/ubclaunchpad/club-manager-client",
 	},
 	{
+		id: 3,
+		spotlight: false,
 		title: "leokamino.com",
 		image: PersonalSite,
 		description:
@@ -35,6 +41,8 @@ const ProjectsList = [
 		githubLink: "https://github.com/LeonardoKamino/digital-resume",
 	},
 	{
+		id: 4,
+		spotlight: true,
 		title: "sortingvisualizer.com",
 		image: SortingVisualizer,
 		description:
@@ -45,6 +53,8 @@ const ProjectsList = [
 	},
 
 	{
+		id: 5,
+		spotlight: true,
 		title: "RISC CPU",
 		image: RISC,
 		description:
@@ -55,6 +65,8 @@ const ProjectsList = [
 	},
 
 	{
+		id: 6,
+		spotlight: true,
 		title: "BatBot",
 		image: BatBot,
 		description:

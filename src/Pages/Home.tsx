@@ -1,25 +1,26 @@
 import React from "react";
-import "./Home.scss";
+import "../Style/Home.scss";
 import Header from "../Components/Header";
 import NavigationBar from "../Components/NavigationBar";
-import AboutMe from "../Components/AboutMe";
-import Projects from "../Components/Projects";
+import Skills from "../Components/Skills";
 import Experience from "../Components/Experience";
 import Contact from "../Components/Contact";
+import ProjectsSpotlights from "../Components/ProjectsSpotlights";
 
 const Home: React.FunctionComponent = () => {
 	return (
-		<div className="home">
+		<div className="home page">
 			<NavigationBar />
 			<Header />
-			<AboutMe />
-			<Experience />
-			<div className="transition"></div>
-			<Projects />
-			<div className="transition rotate-180"></div>
-			<Contact />
+			<div className="content-container">
+				<Skills />
+				<Experience />
+				<div className="transition"></div>
+				<ProjectsSpotlights />
+				<div className="transition rotate-180"></div>
+				<Contact />
+			</div>
 		</div>
 	);
 };
-
 export default Home;
