@@ -1,14 +1,13 @@
 .experience {
-	margin: 0 1rem;
-	@media screen and (min-width: 900px) {
-		margin: 0 3rem;
-	}
+	
 	.title {
 		display: flex;
 		align-items: center;
 		padding: 0;
+		font-size: 2rem;
+		margin-bottom: 2rem;
 		@media screen and (min-width: 900px) {
-			padding: 0 4em;
+			font-size: 3.5rem;
 		}
 	}
 
@@ -23,8 +22,10 @@
 	.timeline-area {
 		border-left: none;
 		padding: 0;
+		margin: 0 0.5rem;
 		@media screen and (min-width: 900px) {
 			margin-top: 3rem;
+			margin: 0 3rem;
 			border-left: 2px solid #cacbd9ff;
 			padding: 0 0 0 70px;
 		}

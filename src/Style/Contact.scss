@@ -5,9 +5,23 @@
 		margin: 0;
 	}
 	.title {
-		font-size: 3rem;
-		margin: 50px 0 80px 0;
-		text-align: center;
+		display: flex;
+		align-items: center;
+		padding: 0;
+		font-size: 2rem;
+		margin-bottom: 2rem;
+		@media screen and (min-width: 900px) {
+			font-size: 2.5rem;
+		}
+	}
+
+	.title::after {
+		background-color: #e1f2f7dd;
+		content: "";
+		flex: 1;
+		height: 1px;
+		margin-left: 1rem;
+		background-color: #e1f2f7dd;
 	}
 	.situation {
 		background-color: #00060d;

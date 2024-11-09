@@ -8,8 +8,7 @@ class Contact extends React.Component {
 	render(): React.ReactNode {
 		return (
 			<div className="contact" id="contact">
-				<p className="title">Contact Me</p>
-
+				<h1 className="title">Contact Me</h1>
 				<div className="columns">
 					<div className="row align-items-center justify-content-evenly">
 						<div className="col-md-5">

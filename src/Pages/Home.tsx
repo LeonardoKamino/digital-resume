@@ -14,10 +14,10 @@ const Home: React.FunctionComponent = () => {
 			<Header />
 			<div className="content-container">
 				{/* <Skills /> */}
-				<Experience />
-				<div className="transition"></div>
+				{/* <div className="transition"></div> */}
 				<ProjectsSpotlights />
-				<div className="transition rotate-180"></div>
+				{/* <div className="transition rotate-180"></div> */}
+				<Experience />
 				<Contact />
 			</div>
 			<Footer />
