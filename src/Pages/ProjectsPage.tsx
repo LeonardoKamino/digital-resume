@@ -2,6 +2,7 @@ import React from 'react';
 import NavigationBar from '../Components/NavigationBar';
 import ProjectsList from '../Data/ProjectsList'; 
 import ProjectCard from '../Components/ProjectCard';
+import Footer from '../Components/Footer';
 import '../Style/ProjectsPage.scss';
 
 const ProjectsPage: React.FC = () => {
@@ -16,6 +17,7 @@ const ProjectsPage: React.FC = () => {
                     ))}
                 </div>
             </div>
+            <Footer />
         </div>
     );
 };

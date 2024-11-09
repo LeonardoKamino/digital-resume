@@ -49,7 +49,7 @@ class Contact extends React.Component {
 							download="LeoKamino.pdf"
 							className="download-resume-link"
 						>
-							Check my Resume
+							Download my Resume
 						</a>
 					</div>
 				</div>

@@ -18,7 +18,10 @@
     .project-subheading{
         font-size: 1.05rem;
         span {
-            margin-right: 0.5rem;
+            .icon {
+				margin-right: 0.25rem;
+			}
+            margin-right: 2rem;
         }
     }
 

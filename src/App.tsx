@@ -11,6 +11,7 @@ import {
 	faTimes,
 	faMinus,
 	faExternalLinkAlt,
+	faChevronUp,
 	faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -28,7 +29,8 @@ library.add(
 	faExternalLinkAlt,
 	faLinkedin,
 	faGithubSquare,
-	faEnvelope
+	faEnvelope,
+	faChevronUp,
 );
 
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import ProjectsList from '../Data/ProjectsList';
+import Footer from '../Components/Footer';
 import NavigationBar from '../Components/NavigationBar';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button } from '@material-ui/core';
@@ -22,7 +23,10 @@ const ProjectPage: React.FC = () => {
           <h1>{project.title}</h1>
           <div className='project-subheading'>
             <h4>{project.summary}</h4>
-            <span className='project-date'>{project.date}</span>
+            <span className='project-date'>
+              <FontAwesomeIcon icon="clock" className="icon" />
+              {project.date}
+            </span>
             <span className='project-status'>Status: {project.status}</span>
           </div>
           <p className='project-description'>{project.description}</p>
@@ -86,6 +90,7 @@ const ProjectPage: React.FC = () => {
             )}
           </div>
       </div>
+      <Footer />
     </div>
   );
 };
