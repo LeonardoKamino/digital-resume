@@ -12,12 +12,12 @@ class Contact extends React.Component {
 
 				<div className="columns">
 					<div className="row align-items-center justify-content-evenly">
-						<div className="col-md-4">
+						<div className="col-md-5">
 							<p className="situation">
 							I'm seeking full-time software engineering roles starting May 2025. If you're hiring or have exciting projects, please reach out!	
 							</p>
 						</div>
-						<div className="col-md-4">
+						<div className="col-md-5">
 							<div className="links-section">
 								<a
 									href="https://github.com/LeonardoKamino"
