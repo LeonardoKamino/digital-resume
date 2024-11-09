@@ -19,10 +19,17 @@
 	}
 	.links-section {
 		padding: 20px 0;
+		display: flex;
+        flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
+        gap: 2rem; /* Adds space between items */
+        justify-content: space-around;
+
+        @media screen and (min-width: 900px) {
+            justify-content: flex-start;
+        }
 		.link {
 			color: #e1f2f7;
 			font-size: 4rem;
-			margin-right: 30px;
 			text-decoration: none;
 		}
 		.link:hover {
@@ -39,8 +46,10 @@
 
 	.download-resume-section {
 		text-align: center;
-		margin-top: 100px;
-		padding-bottom: 40px;
+		margin: 2rem 0;
+		@media screen and (min-width: 900px) {
+            margin: 4rem 0;
+        }
 		.download-resume-link {
 			text-align: center;
 			text-decoration: none;

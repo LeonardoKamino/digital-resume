@@ -1,8 +1,11 @@
 .project-page {
     
     .content-container{
-        font-size: 1.25rem;
-        padding: 0 20px;
+        font-size: 1.1rem;
+        padding: 0.5rem;
+        @media screen and (min-width: 900px) {
+            padding: 0 2rem;
+        }
     }
 
     h1 {
@@ -14,7 +17,18 @@
         width: 100%;
         height: auto;
     }
-
+    .video-demo-container{
+        margin-top: 2rem;
+    }
+    .video-demo {
+        width: 100%; /* 50% width on larger screens */
+        aspect-ratio: 16 / 9;
+        max-width: 100%; /* Prevent overflow */
+        border: none;
+        @media screen and (min-width: 900px) {
+            width: 50%
+        }
+      }
     .project-subheading{
         font-size: 1.05rem;
         span {
@@ -31,8 +45,35 @@
         }
     }
 
+    .skills-title{
+        text-align: center;
+        margin: 1rem 0;
+        font-size: 1.5rem;
+        @media screen and (min-width: 900px) {
+            text-align: left;
+        }
+    }
+    .skills{
+        display: flex;
+        flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
+        gap: 10px; /* Adds space between items */
+        justify-content: center;
+
+        @media screen and (min-width: 900px) {
+            justify-content: flex-start;
+        }
+    }
+
     .links {
-        margin-top: 1rem;
+        margin-top: 2rem;
+        display: flex;
+        flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
+        gap: 10px; /* Adds space between items */
+        justify-content: center;
+
+        @media screen and (min-width: 900px) {
+            justify-content: flex-start;
+        }
     }
 
     .project-description {

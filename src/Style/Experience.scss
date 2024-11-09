@@ -1,5 +1,8 @@
 .experience {
-	margin: 0 2rem;
+	margin: 0 1rem;
+	@media screen and (min-width: 900px) {
+		margin: 0 3rem;
+	}
 	.title {
 		display: flex;
 		align-items: center;

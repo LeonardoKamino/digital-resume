@@ -35,28 +35,30 @@ const ProjectPage: React.FC = () => {
               <li key={feature}>{feature}</li>
             ))}
           </ul>
-          <h3>Skills Used</h3>
-          {project.skills.map((skill: string, index: number) => (
-						<p 
-              className={`skill-item ${index === 0 ? 'no-left-margin' : ''}`} 
-              key={index}
-            >
-              {skill}
-            </p>
-					))}
+          <h3 className='skills-title'>Skills Used</h3>
+          <div className='skills'>
+            {project.skills.map((skill: string, index: number) => (
+              <p 
+                className={`skill-item ${index === 0 ? 'no-left-margin' : ''}`} 
+                key={index}
+              >
+                {skill}
+              </p>
+            ))}
+          </div>
           {project.videoDemoLink && (
-            <div>
+            <div className='video-demo-container'>
               <h3>Video Demo</h3>
               <iframe 
                 src={project.videoDemoLink} 
                 title="Video Demo" 
-                width="560" 
-                height="315" 
+                className='video-demo'
                 />
             </div>
           )}
-          <div className="links">
-            {project.deploymentLink && (
+            {(project.deploymentLink || project.githubLink || project.reportLink) && (
+            <div className="links">
+              {project.deploymentLink && (
               <Button 
                 className='link-button' 
                 startIcon={<FontAwesomeIcon icon="external-link-alt" />} 
@@ -66,8 +68,8 @@ const ProjectPage: React.FC = () => {
               >
                 Live Demo
               </Button>
-            )}
-            {project.githubLink && (
+              )}
+              {project.githubLink && (
               <Button 
                 className='link-button' 
                 startIcon={<FontAwesomeIcon icon={["fab", "github"]} />} 
@@ -77,8 +79,8 @@ const ProjectPage: React.FC = () => {
               >
                 GitHub
               </Button>
-            )}
-            {project.reportLink && (
+              )}
+              {project.reportLink && (
               <Button 
                 className='link-button' 
                 href={project.reportLink} 
@@ -87,8 +89,9 @@ const ProjectPage: React.FC = () => {
               >
                 Project Report
               </Button>
+              )}
+            </div>
             )}
-          </div>
       </div>
       <Footer />
     </div>
