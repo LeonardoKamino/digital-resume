@@ -16,7 +16,7 @@
 		height: 100vh;
 		z-index: 2;
 		padding: 20px;
-		.title {
+		.content {
 			color: #e1f2f7;
 			.greeting {
 				@include fluid-type(font-size, 900px, 1200px, 3em, 5em);

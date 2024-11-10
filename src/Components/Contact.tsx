@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Resume from "../Media/resume.pdf";
+import { Button } from "@material-ui/core";
 
 import "../Style/Contact.scss";
 
@@ -43,13 +44,14 @@ class Contact extends React.Component {
 						</div>
 					</div>
 					<div className="download-resume-section">
-						<a
-							href={Resume}
+						<Button 
+							href={Resume} 
 							download="LeoKamino.pdf"
-							className="download-resume-link"
+							variant="contained"
+							className="link-button"
 						>
-							Download my Resume
-						</a>
+							Download my resume
+						</Button>
 					</div>
 				</div>
 			</div>

@@ -4,6 +4,8 @@ import Slide from "react-reveal/Fade";
 
 import "../Style/Header.scss";
 import BackgroundVideo from "../Media/Background.mp4";
+import { Button } from "@material-ui/core";
+import Resume from "../Media/resume.pdf";
 
 const Header: React.FunctionComponent = () => {
 	return (
@@ -12,15 +14,21 @@ const Header: React.FunctionComponent = () => {
 				<source src={BackgroundVideo} type="video/mp4" />
 			</video>
 			<header className="viewport-header d-flex justify-content-center  align-items-center">
-				<div className="title">
-					<Fade left cascade>
-						<h1 className="greeting"> Hey, I'm Leo ;)</h1>
-					</Fade>
+				<div className="content">
+					<Fade left cascade><h1 className="greeting">Hey, I'm Leo</h1></Fade>
 					<Slide bottom>
 						<h2 className="description">
 							Computer Engineering student @ UBC, Vancouver. <br />
 							Looking for new grad opportunities for May 2025.
 						</h2>
+						<Button 
+							href={Resume} 
+							download="LeoKamino.pdf"
+							variant="contained"
+							className="link-button"
+						>
+							Download my resume
+						</Button>
 					</Slide>
 				</div>
 			</header>

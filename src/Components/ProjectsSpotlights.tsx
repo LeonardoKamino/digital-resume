@@ -5,7 +5,7 @@ import ProjectsList from "../Data/ProjectsList";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@material-ui/core";
 
-import "../Style/Projects.scss";
+import "../Style/ProjectsSpotlights.scss";
 
 
 
