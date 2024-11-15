@@ -10,6 +10,7 @@ function ProjectCard(props: any) {
 	const project = props.project;
 	const navigate = useNavigate();
 
+	
 	useEffect(() => {
 		window.addEventListener("resize", () => {
 			setWindowWidth(window.innerWidth);
